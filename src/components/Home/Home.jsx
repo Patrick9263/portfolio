@@ -31,7 +31,7 @@ const Home = () => {
 				height='512'
 			/>
 
-			<h1 className='text-6xl text-green-500 border-b-4 pb-4' style={{ position: 'absolute', top: '85vh' }}>
+			<h1 className='text-6xl text-white border-b-4 pb-4' style={{ position: 'absolute', top: '85vh' }}>
 				Patrick Smith
 			</h1>
 
