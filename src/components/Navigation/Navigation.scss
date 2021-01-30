@@ -6,3 +6,8 @@ $transitionSpeed: 0.1s;
 	-webkit-transition: all $transitionSpeed ease-in;
 	transition: all $transitionSpeed ease-in;
 }
+
+.navBar {
+	z-index: 100;
+	background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(255, 255, 255, 0));
+}
