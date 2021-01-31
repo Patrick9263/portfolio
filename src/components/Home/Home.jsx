@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 // import { ParallaxBanner } from 'react-scroll-parallax'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
@@ -21,34 +21,75 @@ const Home = () => {
 		backgroundImage: `url(https://wallpaper.dog/large/5558065.jpg)`,
 		backgroundSize: 'cover'
 	}
+	const aboutRef = useRef(null)
+	const careerRef = useRef(null)
+	const educationRef = useRef(null)
+	const projectsRef = useRef(null)
+	const resumeRef = useRef(null)
 	return (
 		<>
-			<Navigation />
+			<Navigation
+				aboutRef={aboutRef}
+				careerRef={careerRef}
+				educationRef={educationRef}
+				projectsRef={projectsRef}
+				resumeRef={resumeRef}
+			/>
 
-			<Parallax pages={2} scrolling horizontal={false}>
-				<ParallaxLayer factor={1} offset={0} speed={0.1}>
+			<Parallax pages={6} scrolling horizontal={false}>
+				<ParallaxLayer factor={1} offset={0} speed={0}>
 					<div className='background-image' style={bannerStyle} />
 					<div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
 						<img
 							className='w-50 h-50 rounded-full mx-auto'
-							style={{ position: 'absolute', top: '55vh' }}
+							style={{ position: 'absolute', top: '30%' }}
 							src={profilePic}
 							alt=''
 							width='384'
 							height='512'
 						/>
-						<h1 className='text-6xl text-white border-b-4 pb-4' style={{ position: 'absolute', top: '85vh' }}>
+						<h1 className='text-6xl text-white border-b-4 pb-4' style={{ position: 'absolute', top: '80%' }}>
 							Patrick Smith
 						</h1>
 					</div>
 				</ParallaxLayer>
 
-				<ParallaxLayer factor={1} offset={1} speed={0.1}>
+				<ParallaxLayer factor={1} offset={1} speed={0}>
 					<div className='background-image' style={secondPageStyle}>
-						<div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 id='about' className='element'>
-								Scroll to element
-							</h1>
+						<div ref={aboutRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>About Me</h1>
+						</div>
+					</div>
+				</ParallaxLayer>
+
+				<ParallaxLayer factor={1} offset={2} speed={0}>
+					<div className='background-image' style={secondPageStyle}>
+						<div ref={careerRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Career</h1>
+						</div>
+					</div>
+				</ParallaxLayer>
+
+				<ParallaxLayer factor={1} offset={3} speed={0}>
+					<div className='background-image' style={secondPageStyle}>
+						<div ref={educationRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Education</h1>
+						</div>
+					</div>
+				</ParallaxLayer>
+
+				<ParallaxLayer factor={1} offset={4} speed={0}>
+					<div className='background-image' style={secondPageStyle}>
+						<div ref={projectsRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Projects</h1>
+						</div>
+					</div>
+				</ParallaxLayer>
+
+				<ParallaxLayer factor={1} offset={5} speed={0}>
+					<div className='background-image' style={secondPageStyle}>
+						<div ref={resumeRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Resume</h1>
 						</div>
 					</div>
 				</ParallaxLayer>

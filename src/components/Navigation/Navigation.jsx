@@ -1,32 +1,54 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-// import { Link } from 'react-router-dom'
-import { Link } from 'react-scroll'
 import './Navigation.scss'
 
-const Navigation = () => {
+const Navigation = (props) => {
 	const linkStyles = 'navLinks text-2 text-gray-300 mr-10 shadow-sm'
+
+	const executeScroll = (refName) => {
+		const smoothScroll = { behavior: 'smooth', block: 'start' }
+		switch (refName) {
+			case 'about':
+				props.aboutRef.current.scrollIntoView(smoothScroll)
+				break
+			case 'career':
+				props.careerRef.current.scrollIntoView(smoothScroll)
+				break
+			case 'education':
+				props.educationRef.current.scrollIntoView(smoothScroll)
+				break
+			case 'projects':
+				props.projectsRef.current.scrollIntoView(smoothScroll)
+				break
+			case 'resume':
+				props.resumeRef.current.scrollIntoView(smoothScroll)
+				break
+			default:
+				break
+		}
+	}
 
 	return (
 		<div className='navBar flex flex-row justify-end items-center select-none absolute inset-x-0 top-0 h-16'>
-			<Link className={linkStyles} to='about' spy={false} smooth duration={500}>
+			<button type='button' className={linkStyles} onClick={() => executeScroll('about')}>
 				About
-			</Link>
+			</button>
 
-			<a href='#career' className={linkStyles}>
+			<button type='button' className={linkStyles} onClick={() => executeScroll('career')}>
 				Career
-			</a>
+			</button>
 
-			<a href='#education' className={linkStyles}>
+			<button type='button' className={linkStyles} onClick={() => executeScroll('education')}>
 				Education
-			</a>
+			</button>
 
-			<a href='#projects' className={linkStyles}>
+			<button type='button' className={linkStyles} onClick={() => executeScroll('projects')}>
 				Projects
-			</a>
+			</button>
 
-			<a href='#resume' className={linkStyles}>
+			<button type='button' className={linkStyles} onClick={() => executeScroll('resume')}>
 				Resume
-			</a>
+			</button>
 		</div>
 	)
 }

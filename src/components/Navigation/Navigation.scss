@@ -1,3 +1,8 @@
+.navLinks {
+	padding: 0;
+	border: none;
+	background: none;
+}
 $transitionSpeed: 0.1s;
 .navLinks:hover {
 	text-shadow: 0px 0px 5px white;
@@ -6,8 +11,9 @@ $transitionSpeed: 0.1s;
 	-webkit-transition: all $transitionSpeed ease-in;
 	transition: all $transitionSpeed ease-in;
 }
+.navLinks:focus { outline: none; }
 
 .navBar {
 	z-index: 100;
-	background-image: linear-gradient(rgb(0, 0, 0, 0.6), rgb(255, 255, 255, 0));
+	background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(255, 255, 255, 0));
 }
