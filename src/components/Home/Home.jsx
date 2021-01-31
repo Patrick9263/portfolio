@@ -17,8 +17,24 @@ const Home = () => {
 	const bannerStyle = {
 		backgroundImage: `url(${banner})`
 	}
-	const secondPageStyle = {
+	const aboutPageStyle = {
 		backgroundImage: `url(https://wallpaper.dog/large/5558065.jpg)`,
+		backgroundSize: 'cover'
+	}
+	const careerPageStyle = {
+		backgroundImage: `url(https://www.mural-wallpaper.com/wp-content/uploads/2019/07/A-S19-1.jpeg)`,
+		backgroundSize: 'cover'
+	}
+	const educationPageStyle = {
+		backgroundImage: `url(https://w.wallha.com/ws/9/eUQJarGq.jpg)`,
+		backgroundSize: 'cover'
+	}
+	const projectsPageStyle = {
+		backgroundImage: `url(https://wallpapercave.com/wp/wp2825923.jpg)`,
+		backgroundSize: 'cover'
+	}
+	const resumePageStyle = {
+		backgroundImage: `url(https://wallpapercave.com/wp/wp7447287.jpg)`,
 		backgroundSize: 'cover'
 	}
 	const aboutRef = useRef(null)
@@ -55,7 +71,7 @@ const Home = () => {
 				</ParallaxLayer>
 
 				<ParallaxLayer factor={1} offset={1} speed={0}>
-					<div className='background-image' style={secondPageStyle}>
+					<div className='background-image' style={aboutPageStyle}>
 						<div ref={aboutRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
 							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>About Me</h1>
 						</div>
@@ -63,15 +79,15 @@ const Home = () => {
 				</ParallaxLayer>
 
 				<ParallaxLayer factor={1} offset={2} speed={0}>
-					<div className='background-image' style={secondPageStyle}>
+					<div className='background-image' style={careerPageStyle}>
 						<div ref={careerRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Career</h1>
+							<h1 className='sectionTitle text-6xl text-black border-b-4 pb-4'>Career</h1>
 						</div>
 					</div>
 				</ParallaxLayer>
 
 				<ParallaxLayer factor={1} offset={3} speed={0}>
-					<div className='background-image' style={secondPageStyle}>
+					<div className='background-image' style={educationPageStyle}>
 						<div ref={educationRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
 							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Education</h1>
 						</div>
@@ -79,7 +95,7 @@ const Home = () => {
 				</ParallaxLayer>
 
 				<ParallaxLayer factor={1} offset={4} speed={0}>
-					<div className='background-image' style={secondPageStyle}>
+					<div className='background-image' style={projectsPageStyle}>
 						<div ref={projectsRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
 							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Projects</h1>
 						</div>
@@ -87,9 +103,9 @@ const Home = () => {
 				</ParallaxLayer>
 
 				<ParallaxLayer factor={1} offset={5} speed={0}>
-					<div className='background-image' style={secondPageStyle}>
+					<div className='background-image' style={resumePageStyle}>
 						<div ref={resumeRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Resume</h1>
+							<h1 className='sectionTitle text-6xl text-black border-b-4 pb-4'>Resume</h1>
 						</div>
 					</div>
 				</ParallaxLayer>
