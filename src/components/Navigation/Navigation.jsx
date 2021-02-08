@@ -1,54 +1,72 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
+import React, { useState } from 'react'
 import './Navigation.scss'
 
-const Navigation = (props) => {
-	const linkStyles = 'navLinks text-2 text-gray-300 mr-10 shadow-sm'
+import home from '../../../assets/navBarIcons/home.png'
+import about from '../../../assets/navBarIcons/about.png'
+import career from '../../../assets/navBarIcons/career.png'
+import education from '../../../assets/navBarIcons/education.png'
+import projects from '../../../assets/navBarIcons/projects.png'
+import info from '../../../assets/navBarIcons/info.png'
+import mail from '../../../assets/navBarIcons/mail.png'
 
-	const executeScroll = (refName) => {
-		const smoothScroll = { behavior: 'smooth', block: 'start' }
-		switch (refName) {
-			case 'about':
-				props.aboutRef.current.scrollIntoView(smoothScroll)
-				break
-			case 'career':
-				props.careerRef.current.scrollIntoView(smoothScroll)
-				break
-			case 'education':
-				props.educationRef.current.scrollIntoView(smoothScroll)
-				break
-			case 'projects':
-				props.projectsRef.current.scrollIntoView(smoothScroll)
-				break
-			case 'resume':
-				props.resumeRef.current.scrollIntoView(smoothScroll)
-				break
-			default:
-				break
-		}
-	}
+import gitHub from '../../../assets/navBarIcons/gitHub.png'
+import linkedin from '../../../assets/navBarIcons/linkedin.png'
+
+// import cross from '../../../assets/navBarIcons/cross.png'
+// import cloud from '../../../assets/navBarIcons/cloud.png'
+
+const Navigation = () => {
+	const [imageStyle, setImageStyle] = useState({ opacity: 1, width: '40%', marginBottom: '10px' })
+	const hideImage = { opacity: 0, width: '40%', marginBottom: '10px' }
+	const showImage = { opacity: 1, width: '40%', marginBottom: '10px' }
+	/*
+	const link = (text) => (
+		<button type='button' className='navLinks' style={{ zIndex: -1 }}>
+			{text}
+		</button>
+	) */
 
 	return (
-		<div className='navBar flex flex-row justify-end items-center select-none absolute inset-x-0 top-0 h-16'>
-			<button type='button' className={linkStyles} onClick={() => executeScroll('about')}>
-				About
-			</button>
+		<div className='navBar flex flex-col select-none'>
+			{/* {link('.home()')}
+			{link('.about()')}
+			{link('.career()')}
+			{link('.education()')}
+			{link('.projects()')}
+			{link('.resume()')} */}
 
-			<button type='button' className={linkStyles} onClick={() => executeScroll('career')}>
-				Career
-			</button>
+			{imageStyle.opacity === 1 ? (
+				<img
+					src={home}
+					alt='.home()'
+					style={imageStyle}
+					onMouseEnter={() => setImageStyle(hideImage)}
+					onMouseLeave={() => setImageStyle(showImage)}
+				/>
+			) : (
+				<p style={{ color: 'white', marginBottom: '10px' }} onMouseLeave={() => setImageStyle(showImage)}>
+					.home()
+				</p>
+			)}
 
-			<button type='button' className={linkStyles} onClick={() => executeScroll('education')}>
-				Education
-			</button>
+			<img src={about} alt='.about()' style={{ width: '40%', marginBottom: '10px' }} />
+			<img src={career} alt='.career()' style={{ width: '40%', marginBottom: '10px' }} />
+			<img src={education} alt='.education()' style={{ width: '40%', marginBottom: '10px' }} />
+			<img src={projects} alt='.projects()' style={{ width: '40%', marginBottom: '10px' }} />
+			<img src={info} alt='.resume()' style={{ width: '40%', marginBottom: '10px' }} />
+			<img src={mail} alt='.contact()' style={{ width: '40%', marginBottom: '10px' }} />
 
-			<button type='button' className={linkStyles} onClick={() => executeScroll('projects')}>
-				Projects
-			</button>
-
-			<button type='button' className={linkStyles} onClick={() => executeScroll('resume')}>
-				Resume
-			</button>
+			<a href='https://github.com/Patrick9263' className='navBar flex flex-col'>
+				<img src={gitHub} alt='.GitHub()' style={{ width: '40%', marginBottom: '10px' }} />
+			</a>
+			<a href='https://www.linkedin.com/in/patrick-smith1' className='navBar flex flex-col'>
+				<img src={linkedin} alt='LinkedIn' style={{ width: '40%', marginBottom: '10px' }} />
+			</a>
+			{/*
+			<img src={cross} alt='cross' style={{ width: '40%' }} />
+			<img src={cloud} alt='cloud' style={{ width: '40%' }} />
+ */}
 		</div>
 	)
 }

@@ -1,116 +1,139 @@
-import React, { useRef } from 'react'
-// import { ParallaxBanner } from 'react-scroll-parallax'
-import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+import React from 'react'
 
 import Navigation from '../Navigation/Navigation'
 import './Home.scss'
 
-import profilePic from '../../../assets/profilePic.png'
-import banner from '../../../assets/banner.jpeg'
-// other background
-// https://wallpaper.dog/large/5558065.jpg
-// https://www.wallpapertip.com/wmimgs/116-1168442_landscape-4k-mountains.jpg
-
+import logo from '../../../assets/logo only letter.png'
 // https://github.com/jscottsmith/react-scroll-parallax#banner-layers-prop
+// https://www.iconshock.com
+// https://jacekjeznach.com/
+// https://www.heropatterns.com/
 
-const Home = () => {
-	const bannerStyle = {
-		backgroundImage: `url(${banner})`
-	}
-	const aboutPageStyle = {
-		backgroundImage: `url(https://wallpaper.dog/large/5558065.jpg)`,
-		backgroundSize: 'cover'
-	}
-	const careerPageStyle = {
-		backgroundImage: `url(https://www.mural-wallpaper.com/wp-content/uploads/2019/07/A-S19-1.jpeg)`,
-		backgroundSize: 'cover'
-	}
-	const educationPageStyle = {
-		backgroundImage: `url(https://w.wallha.com/ws/9/eUQJarGq.jpg)`,
-		backgroundSize: 'cover'
-	}
-	const projectsPageStyle = {
-		backgroundImage: `url(https://wallpapercave.com/wp/wp2825923.jpg)`,
-		backgroundSize: 'cover'
-	}
-	const resumePageStyle = {
-		backgroundImage: `url(https://wallpapercave.com/wp/wp7447287.jpg)`,
-		backgroundSize: 'cover'
-	}
-	const aboutRef = useRef(null)
-	const careerRef = useRef(null)
-	const educationRef = useRef(null)
-	const projectsRef = useRef(null)
-	const resumeRef = useRef(null)
+const HomeSection = () => {
 	return (
 		<>
-			<Navigation
-				aboutRef={aboutRef}
-				careerRef={careerRef}
-				educationRef={educationRef}
-				projectsRef={projectsRef}
-				resumeRef={resumeRef}
-			/>
-
-			<Parallax pages={6} scrolling horizontal={false}>
-				<ParallaxLayer factor={1} offset={0} speed={0}>
-					<div className='background-image' style={bannerStyle} />
-					<div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-						<img
-							className='w-50 h-50 rounded-full mx-auto'
-							style={{ position: 'absolute', top: '30%' }}
-							src={profilePic}
-							alt=''
-							width='384'
-							height='512'
-						/>
-						<h1 className='text-6xl text-white border-b-4 pb-4' style={{ position: 'absolute', top: '80%' }}>
-							Patrick Smith
-						</h1>
-					</div>
-				</ParallaxLayer>
-
-				<ParallaxLayer factor={1} offset={1} speed={0}>
-					<div className='background-image' style={aboutPageStyle}>
-						<div ref={aboutRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>About Me</h1>
-						</div>
-					</div>
-				</ParallaxLayer>
-
-				<ParallaxLayer factor={1} offset={2} speed={0}>
-					<div className='background-image' style={careerPageStyle}>
-						<div ref={careerRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-black border-b-4 pb-4'>Career</h1>
-						</div>
-					</div>
-				</ParallaxLayer>
-
-				<ParallaxLayer factor={1} offset={3} speed={0}>
-					<div className='background-image' style={educationPageStyle}>
-						<div ref={educationRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Education</h1>
-						</div>
-					</div>
-				</ParallaxLayer>
-
-				<ParallaxLayer factor={1} offset={4} speed={0}>
-					<div className='background-image' style={projectsPageStyle}>
-						<div ref={projectsRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-white border-b-4 pb-4'>Projects</h1>
-						</div>
-					</div>
-				</ParallaxLayer>
-
-				<ParallaxLayer factor={1} offset={5} speed={0}>
-					<div className='background-image' style={resumePageStyle}>
-						<div ref={resumeRef} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-							<h1 className='sectionTitle text-6xl text-black border-b-4 pb-4'>Resume</h1>
-						</div>
-					</div>
-				</ParallaxLayer>
-			</Parallax>
+			<p style={{ fontSize: '40px' }}>Hi, I&apos;m Patrick!</p>
+			<p style={{ fontSize: '40px' }}>I&apos;m a software engineer at Travelers.</p>
+			<p style={{ color: 'gray' }}>React and JavaScript Developer</p>
 		</>
+	)
+}
+
+const AboutSection = () => {
+	return (
+		<>
+			<br />
+			<h1>About</h1>
+
+			<li>Description here</li>
+			<li>Interests</li>
+			<br />
+		</>
+	)
+}
+const SkillsSection = () => {
+	return (
+		<div>
+			<br />
+			<h1>Skills</h1>
+
+			<li>C/C++, Java, Python, MatLab</li>
+			<li>React, JavaScript, HTML5, CSS, Markdown</li>
+			<li>PowerShell, Bash, MySQL, GitHub, Vim, Emacs, WebStorm</li>
+			<li>PC hardware</li>
+
+			<br />
+		</div>
+	)
+}
+const CareerSection = () => {
+	return (
+		<>
+			<br />
+			<h1>Career</h1>
+
+			<li>Travelers Insurance</li>
+			<li>UConn Information Technology Services</li>
+			<li>Target Corporation</li>
+
+			<br />
+		</>
+	)
+}
+const EducationSection = () => {
+	return (
+		<>
+			<br />
+			<h1>Education</h1>
+
+			<li>University of Connecticut - Bachelor of Science in Engineering</li>
+			<li>Major in Computer Science and Engineering (Concentration in Software Design)</li>
+			<li>Minor in Mathematics</li>
+			<li>Cumulative GPA: 3.45</li>
+			<br />
+		</>
+	)
+}
+const ProjectsSection = () => {
+	return (
+		<>
+			<br />
+			<h1>Projects</h1>
+
+			<li>Senior Design Project</li>
+			<li>
+				Developed web application and server to detect Copy Number Variations (CNVs) to detect mental illnesses,
+				developmental disorders, and cancer to improve research
+			</li>
+			<li>UConn Hackathon</li>
+			<li>Find and solve present-day problems involving sports and games within 24 hours</li>
+			<li>Developed an Android application in a group of three to promote recycling at sports venues</li>
+			<br />
+		</>
+	)
+}
+const ResumeSection = () => {
+	return (
+		<>
+			<br />
+			<h1>Resume</h1>
+
+			<a href='#test' style={{ color: '#5587af' }}>
+				Put Link Here
+			</a>
+			<br />
+		</>
+	)
+}
+const ContactSection = () => {
+	return (
+		<>
+			<br />
+			<h1>Contact Me</h1>
+
+			<li>Put Contact info here</li>
+			<br />
+		</>
+	)
+}
+
+const Home = () => {
+	return (
+		<div className='bodyContainer font-sans antialiased'>
+			<img src={logo} alt='logo' style={{ backgroundColor: 'rgb(20, 20, 20)' }} />
+			<Navigation />
+
+			<div className='leftSection'>
+				<HomeSection />
+				<AboutSection />
+				<SkillsSection />
+				<CareerSection />
+				<EducationSection />
+				<ProjectsSection />
+				<ResumeSection />
+				<ContactSection />
+			</div>
+		</div>
 	)
 }
 

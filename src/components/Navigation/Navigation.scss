@@ -1,19 +1,26 @@
+.navBar {
+	/* border: 2px solid orange; */
+	grid-area: 2/1/2/1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #141414;
+}
+
 .navLinks {
-	padding: 0;
+	color: #641ed7d7;
 	border: none;
 	background: none;
+	margin-bottom: 20px;
 }
 $transitionSpeed: 0.1s;
 .navLinks:hover {
-	text-shadow: 0px 0px 5px white;
+	text-shadow: 0px 0px 8px white;
 	-moz-transition: all $transitionSpeed ease-in;
 	-o-transition: all $transitionSpeed ease-in;
 	-webkit-transition: all $transitionSpeed ease-in;
 	transition: all $transitionSpeed ease-in;
 }
-.navLinks:focus { outline: none; }
-
-.navBar {
-	z-index: 100;
-	background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgb(255, 255, 255, 0));
+.navLinks:focus {
+	outline: none;
 }
