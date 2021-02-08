@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../../../assets/logo only letter.png'
 import './Navigation.scss'
 
 import home from '../../../assets/navBarIcons/home.png'
@@ -17,9 +19,6 @@ import linkedin from '../../../assets/navBarIcons/linkedin.png'
 // import cloud from '../../../assets/navBarIcons/cloud.png'
 
 const Navigation = () => {
-	const [imageStyle, setImageStyle] = useState({ opacity: 1, width: '40%', marginBottom: '10px' })
-	const hideImage = { opacity: 0, width: '40%', marginBottom: '10px' }
-	const showImage = { opacity: 1, width: '40%', marginBottom: '10px' }
 	/*
 	const link = (text) => (
 		<button type='button' className='navLinks' style={{ zIndex: -1 }}>
@@ -36,33 +35,41 @@ const Navigation = () => {
 			{link('.projects()')}
 			{link('.resume()')} */}
 
-			{imageStyle.opacity === 1 ? (
-				<img
-					src={home}
-					alt='.home()'
-					style={imageStyle}
-					onMouseEnter={() => setImageStyle(hideImage)}
-					onMouseLeave={() => setImageStyle(showImage)}
-				/>
-			) : (
-				<p style={{ color: 'white', marginBottom: '10px' }} onMouseLeave={() => setImageStyle(showImage)}>
-					.home()
-				</p>
-			)}
+			<img src={logo} alt='logo' style={{ backgroundColor: 'rgb(20, 20, 20)' }} />
 
+			<Link to='/' style={{ color: 'white' }}>
+				.home()
+			</Link>
+			<Link to='/about' style={{ color: 'white' }}>
+				.about()
+			</Link>
+			<Link to='/career' style={{ color: 'white' }}>
+				.career()
+			</Link>
+			<Link to='/education' style={{ color: 'white' }}>
+				.education()
+			</Link>
+			<Link to='/projects' style={{ color: 'white' }}>
+				.projects()
+			</Link>
+			<Link to='/contact' style={{ color: 'white' }}>
+				.contact()
+			</Link>
+
+			<img src={home} alt='.home()' style={{ width: '40%', marginBottom: '10px' }} />
 			<img src={about} alt='.about()' style={{ width: '40%', marginBottom: '10px' }} />
 			<img src={career} alt='.career()' style={{ width: '40%', marginBottom: '10px' }} />
 			<img src={education} alt='.education()' style={{ width: '40%', marginBottom: '10px' }} />
 			<img src={projects} alt='.projects()' style={{ width: '40%', marginBottom: '10px' }} />
-			<img src={info} alt='.resume()' style={{ width: '40%', marginBottom: '10px' }} />
 			<img src={mail} alt='.contact()' style={{ width: '40%', marginBottom: '10px' }} />
-
 			<a href='https://github.com/Patrick9263' className='navBar flex flex-col'>
 				<img src={gitHub} alt='.GitHub()' style={{ width: '40%', marginBottom: '10px' }} />
 			</a>
 			<a href='https://www.linkedin.com/in/patrick-smith1' className='navBar flex flex-col'>
 				<img src={linkedin} alt='LinkedIn' style={{ width: '40%', marginBottom: '10px' }} />
 			</a>
+
+			<img src={info} alt='.resume()' style={{ width: '40%', marginBottom: '10px' }} />
 			{/*
 			<img src={cross} alt='cross' style={{ width: '40%' }} />
 			<img src={cloud} alt='cloud' style={{ width: '40%' }} />
