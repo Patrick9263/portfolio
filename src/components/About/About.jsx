@@ -12,13 +12,21 @@ const About = () => {
 
 				<li>Description here</li>
 				<li>Interests</li>
-				<br />
-				<h1>Skills</h1>
 
+				<br />
+
+				<h1>Skills</h1>
 				<li>C/C++, Java, Python, MatLab</li>
 				<li>React, JavaScript, HTML5, CSS, Markdown</li>
 				<li>PowerShell, Bash, MySQL, GitHub, Vim, Emacs, WebStorm</li>
 				<li>PC hardware</li>
+
+				<br />
+
+				<h1>Interests</h1>
+				<li>Photography</li>
+				<li>Videogames</li>
+				<li>Travel</li>
 
 				<br />
 			</div>

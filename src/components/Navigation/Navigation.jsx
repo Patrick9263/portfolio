@@ -1,79 +1,65 @@
-/* eslint-disable react/prop-types */
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../../assets/logo only letter.png'
 import './Navigation.scss'
 
-import home from '../../../assets/navBarIcons/home.png'
-import about from '../../../assets/navBarIcons/about.png'
-import career from '../../../assets/navBarIcons/career.png'
-import education from '../../../assets/navBarIcons/education.png'
-import projects from '../../../assets/navBarIcons/projects.png'
-import info from '../../../assets/navBarIcons/info.png'
-import mail from '../../../assets/navBarIcons/mail.png'
+import home from '../../../assets/icons/png/interfaces/home.png'
+import about from '../../../assets/icons/png/interfaces/nav-icon-list-a.png'
+import career from '../../../assets/icons/png/editors/file-1.png'
 
-import gitHub from '../../../assets/navBarIcons/gitHub.png'
-import linkedin from '../../../assets/navBarIcons/linkedin.png'
+import education from '../../../assets/icons/png/interfaces/person.png'
+import projects from '../../../assets/icons/png/interfaces/code.png'
+import mail from '../../../assets/icons/png/interfaces/email.png'
 
-// import cross from '../../../assets/navBarIcons/cross.png'
-// import cloud from '../../../assets/navBarIcons/cloud.png'
+import gitHub from '../../../assets/icons/png/brand/github.png'
+import linkedin from '../../../assets/icons/png/brand/linkedin.png'
 
 const Navigation = () => {
-	/*
-	const link = (text) => (
-		<button type='button' className='navLinks' style={{ zIndex: -1 }}>
-			{text}
-		</button>
-	) */
-
+	const purpleFilter = 'invert(15%) sepia(98%) saturate(5270%) hue-rotate(264deg) brightness(92%) contrast(89%)'
+	const imgStyle = { width: '35%', marginBottom: '20px', filter: purpleFilter }
+	const mediaStyle = {
+		width: '35%',
+		marginBottom: '20px',
+		filter: purpleFilter
+	}
 	return (
 		<div className='navBar flex flex-col select-none'>
-			{/* {link('.home()')}
-			{link('.about()')}
-			{link('.career()')}
-			{link('.education()')}
-			{link('.projects()')}
-			{link('.resume()')} */}
+			<img
+				src={logo}
+				alt='logo'
+				style={{ position: 'fixed', top: 0, width: '70px', backgroundColor: 'rgb(20, 20, 20)' }}
+			/>
 
-			<img src={logo} alt='logo' style={{ backgroundColor: 'rgb(20, 20, 20)' }} />
-
-			<Link to='/' style={{ color: 'white' }}>
-				.home()
+			<Link to='/' className='navBar flex flex-col' style={{ color: 'white' }}>
+				<img src={home} alt='.home()' style={imgStyle} />
 			</Link>
-			<Link to='/about' style={{ color: 'white' }}>
-				.about()
+			<Link to='/about' className='navBar flex flex-col' style={{ color: 'white' }}>
+				<img src={about} alt='.about()' style={imgStyle} />
 			</Link>
-			<Link to='/career' style={{ color: 'white' }}>
-				.career()
+			<Link to='/career' className='navBar flex flex-col' style={{ color: 'white' }}>
+				<img src={career} alt='.career()' style={imgStyle} />
 			</Link>
-			<Link to='/education' style={{ color: 'white' }}>
-				.education()
+			<Link to='/education' className='navBar flex flex-col' style={{ color: 'white' }}>
+				<img src={education} alt='.education()' style={imgStyle} />
 			</Link>
-			<Link to='/projects' style={{ color: 'white' }}>
-				.projects()
+			<Link to='/projects' className='navBar flex flex-col' style={{ color: 'white' }}>
+				<img src={projects} alt='.projects()' style={imgStyle} />
 			</Link>
-			<Link to='/contact' style={{ color: 'white' }}>
-				.contact()
+			<Link to='/contact' className='navBar flex flex-col' style={{ color: 'white' }}>
+				<img src={mail} alt='.contact()' style={imgStyle} />
 			</Link>
 
-			<img src={home} alt='.home()' style={{ width: '40%', marginBottom: '10px' }} />
-			<img src={about} alt='.about()' style={{ width: '40%', marginBottom: '10px' }} />
-			<img src={career} alt='.career()' style={{ width: '40%', marginBottom: '10px' }} />
-			<img src={education} alt='.education()' style={{ width: '40%', marginBottom: '10px' }} />
-			<img src={projects} alt='.projects()' style={{ width: '40%', marginBottom: '10px' }} />
-			<img src={mail} alt='.contact()' style={{ width: '40%', marginBottom: '10px' }} />
-			<a href='https://github.com/Patrick9263' className='navBar flex flex-col'>
-				<img src={gitHub} alt='.GitHub()' style={{ width: '40%', marginBottom: '10px' }} />
+			<a href='https://github.com/Patrick9263' target='_blank' rel='noreferrer' className='navBar flex flex-col'>
+				<img src={gitHub} alt='.GitHub()' style={mediaStyle} />
 			</a>
-			<a href='https://www.linkedin.com/in/patrick-smith1' className='navBar flex flex-col'>
-				<img src={linkedin} alt='LinkedIn' style={{ width: '40%', marginBottom: '10px' }} />
+			<a
+				href='https://www.linkedin.com/in/patrick-smith1'
+				target='_blank'
+				rel='noreferrer'
+				className='navBar flex flex-col'
+			>
+				<img src={linkedin} alt='LinkedIn' style={mediaStyle} />
 			</a>
-
-			<img src={info} alt='.resume()' style={{ width: '40%', marginBottom: '10px' }} />
-			{/*
-			<img src={cross} alt='cross' style={{ width: '40%' }} />
-			<img src={cloud} alt='cloud' style={{ width: '40%' }} />
- */}
 		</div>
 	)
 }

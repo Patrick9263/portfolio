@@ -7,6 +7,11 @@ import './Home.scss'
 // https://jacekjeznach.com/
 // https://www.heropatterns.com/
 
+// filter generator:
+// https://codepen.io/sosuke/pen/Pjoqqp
+
+// https://fontisto.com/icons
+
 const HomeSection = () => {
 	return (
 		<>
