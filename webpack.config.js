@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer') // help tailwindcss to work
 module.exports = {
 	mode: 'development',
 	devtool: 'eval-cheap-source-map',
-	devServer: { contentBase: path.join(__dirname, 'prod'), port: 3000, hot: true },
+	devServer: { contentBase: path.join(__dirname, 'prod'), port: 3000, hot: true, historyApiFallback: true },
 
 	resolve: {
 		extensions: ['.js', '.jsx'] // we can import without typing '.js or .jsx'
@@ -21,8 +21,10 @@ module.exports = {
 
 	output: {
 		path: path.resolve(__dirname, './prod'),
+		publicPath: '/',
 		filename: '[name].[fullhash].bundle.js' // for production use [contenthash], for developement use [fullhash]
 	},
+
 	plugins: [
 		new MiniCssExtractPlugin({ filename: '[name].[contenthash].css', chunkFilename: '[id].[contenthash].css' }),
 		// new CleanWebpackPlugin(),
