@@ -4,14 +4,17 @@
 
 @import 'tailwindcss/utilities';
 
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 body {
 	background-color: #191919;
+	overflow: hidden;
 }
 
 .route-wrapper {
-  position: relative;
+	position: relative;
 }
 
 .route-wrapper > div {
-  position: absolute;
+	position: absolute;
 }

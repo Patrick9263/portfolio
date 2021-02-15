@@ -12,22 +12,14 @@ import './Home.scss'
 
 // https://fontisto.com/icons
 
-const HomeSection = () => {
-	return (
-		<>
-			<p style={{ fontSize: '40px' }}>Hi, I&apos;m Patrick!</p>
-			<p style={{ fontSize: '40px' }}>I&apos;m a software engineer at Travelers.</p>
-			<p style={{ color: 'gray' }}>React and JavaScript Developer</p>
-		</>
-	)
-}
-
 const Home = () => {
 	return (
 		<div className='bodyContainer font-sans antialiased'>
 			<Navigation />
 			<div className='leftSection'>
-				<HomeSection />
+				<p style={{ fontSize: '40px' }}>Hi, I&apos;m Patrick!</p>
+				<p style={{ fontSize: '40px' }}>I&apos;m a software engineer at Travelers.</p>
+				<p style={{ color: 'gray' }}>React and JavaScript Developer</p>
 			</div>
 		</div>
 	)

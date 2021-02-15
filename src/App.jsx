@@ -13,7 +13,8 @@ import Contact from './components/Contact/Contact'
 function mapStyles(styles) {
 	return {
 		opacity: styles.opacity,
-		transform: `scale(${styles.scale})`
+		transform: `scale(${styles.scale})`,
+		width: '100%'
 	}
 }
 

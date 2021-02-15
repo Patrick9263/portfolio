@@ -34,7 +34,7 @@ const Navigation = () => {
 			<img src={image} alt={altName} style={{ ...getImgStyle(to), ...customStyle }} />
 		</NavLink>
 	)
-	const mediaButton = (url, image, altName) => (
+	const socialMediaButton = (url, image, altName) => (
 		<a href={url} target='_blank' rel='noreferrer' className='navBar'>
 			<img src={image} alt={altName} style={mediaStyle} />
 		</a>
@@ -53,8 +53,8 @@ const Navigation = () => {
 			</div>
 
 			<div>
-				{mediaButton('https://github.com/Patrick9263', gitHub, '.gitHub()')}
-				{mediaButton('https://www.linkedin.com/in/patrick-smith1', linkedin, '.linkedIn()')}
+				{socialMediaButton('https://github.com/Patrick9263', gitHub, '.gitHub()')}
+				{socialMediaButton('https://www.linkedin.com/in/patrick-smith1', linkedin, '.linkedIn()')}
 			</div>
 		</div>
 	)
