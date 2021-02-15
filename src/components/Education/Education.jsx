@@ -1,5 +1,6 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
+import MyCard from '../Reusable/MyCard'
 
 const Education = () => {
 	return (
@@ -10,11 +11,13 @@ const Education = () => {
 				<p style={{ fontSize: '40px' }}>Education</p>
 				<br />
 
-				<li>University of Connecticut - Bachelor of Science in Engineering</li>
-				<li>Major in Computer Science and Engineering (Concentration in Software Design)</li>
-				<li>Minor in Mathematics</li>
-				<li>Cumulative GPA: 3.45</li>
-				<br />
+				<MyCard title='University of Connecticut'>
+					<li>Bachelor of Science in Engineering</li>
+					<li>Major in Computer Science and Engineering</li>
+					<li>Concentration in Software Design</li>
+					<li>Minor in Mathematics</li>
+					<li>Cumulative GPA of 3.45</li>
+				</MyCard>
 			</div>
 		</div>
 	)
