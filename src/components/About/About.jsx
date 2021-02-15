@@ -10,15 +10,15 @@ const About = () => {
 				<p style={{ fontSize: '40px' }}>About Me</p>
 				<br />
 
-				<li>Description here</li>
+				<li>Hey, I&apos;m Patrick, a software developer at Travelers.</li>
 
 				<br />
 
 				<p style={{ fontSize: '20px' }}>Skills</p>
 				<br />
-				<li>React, JavaScript, HTML5, CSS, Markdown</li>
-				<li>C/C++, Java, Python, MatLab</li>
-				<li>PowerShell, Bash, MySQL, GitHub, Vim, Emacs, WebStorm</li>
+				<li>React, JavaScript, HTML5, CSS, REST APIs, Markdown, AsciiDocs</li>
+				<li>Python, C/C++, Java, MatLab</li>
+				<li>PowerShell, Bash, MySQL, Git</li>
 				<li>PC hardware</li>
 
 				<br />
