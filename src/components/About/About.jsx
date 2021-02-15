@@ -7,15 +7,15 @@ const About = () => {
 			<Navigation />
 
 			<div className='leftSection'>
+				<p style={{ fontSize: '40px' }}>About Me</p>
 				<br />
-				<h1>About</h1>
 
 				<li>Description here</li>
-				<li>Interests</li>
 
 				<br />
 
-				<h1>Skills</h1>
+				<p style={{ fontSize: '20px' }}>Skills</p>
+				<br />
 				<li>C/C++, Java, Python, MatLab</li>
 				<li>React, JavaScript, HTML5, CSS, Markdown</li>
 				<li>PowerShell, Bash, MySQL, GitHub, Vim, Emacs, WebStorm</li>
@@ -23,7 +23,8 @@ const About = () => {
 
 				<br />
 
-				<h1>Interests</h1>
+				<p style={{ fontSize: '20px' }}>Skills</p>
+				<br />
 				<li>Photography</li>
 				<li>Videogames</li>
 				<li>Travel</li>

@@ -7,8 +7,8 @@ const Contact = () => {
 			<Navigation />
 
 			<div className='leftSection'>
+				<p style={{ fontSize: '40px' }}>Contact Me</p>
 				<br />
-				<h1>Contact Me</h1>
 
 				<li>Put Contact info here</li>
 				<br />

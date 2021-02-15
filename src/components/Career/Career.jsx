@@ -7,8 +7,8 @@ const Career = () => {
 			<Navigation />
 
 			<div className='leftSection'>
+				<p style={{ fontSize: '40px' }}>Career</p>
 				<br />
-				<h1>Career</h1>
 
 				<li>Travelers Insurance</li>
 				<li>UConn Information Technology Services</li>

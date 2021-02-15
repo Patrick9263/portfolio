@@ -7,8 +7,8 @@ const Education = () => {
 			<Navigation />
 
 			<div className='leftSection'>
+				<p style={{ fontSize: '40px' }}>Education</p>
 				<br />
-				<h1>Education</h1>
 
 				<li>University of Connecticut - Bachelor of Science in Engineering</li>
 				<li>Major in Computer Science and Engineering (Concentration in Software Design)</li>
