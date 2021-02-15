@@ -16,14 +16,14 @@ const About = () => {
 
 				<p style={{ fontSize: '20px' }}>Skills</p>
 				<br />
-				<li>C/C++, Java, Python, MatLab</li>
 				<li>React, JavaScript, HTML5, CSS, Markdown</li>
+				<li>C/C++, Java, Python, MatLab</li>
 				<li>PowerShell, Bash, MySQL, GitHub, Vim, Emacs, WebStorm</li>
 				<li>PC hardware</li>
 
 				<br />
 
-				<p style={{ fontSize: '20px' }}>Skills</p>
+				<p style={{ fontSize: '20px' }}>Interests</p>
 				<br />
 				<li>Photography</li>
 				<li>Videogames</li>
