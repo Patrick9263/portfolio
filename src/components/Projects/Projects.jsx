@@ -10,7 +10,7 @@ const Projects = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p style={{ fontSize: '40px' }}>Projects</p>
+				<p className='pageHeader'>Projects</p>
 				<br />
 
 				<MyCard title='Senior Design Project'>

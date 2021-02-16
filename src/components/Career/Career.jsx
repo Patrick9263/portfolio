@@ -8,7 +8,7 @@ const Career = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p style={{ fontSize: '40px' }}>Career</p>
+				<p className='pageHeader'>Career</p>
 				<br />
 
 				<MyCard title='Travelers Insurance'>

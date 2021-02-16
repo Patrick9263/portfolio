@@ -8,7 +8,7 @@ const Education = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p style={{ fontSize: '40px' }}>Education</p>
+				<p className='pageHeader'>Education</p>
 				<br />
 
 				<MyCard title='University of Connecticut'>

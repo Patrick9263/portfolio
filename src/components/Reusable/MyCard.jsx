@@ -8,7 +8,7 @@ const MyCard = ({ title, children }) => {
 		<Card>
 			<Card.Body>
 				<Card.Title className='select-none'>{title}</Card.Title>
-				<Card.Text className='select-none'>{children}</Card.Text>
+				<Card.Text className='select-none text-gray-300'>{children}</Card.Text>
 			</Card.Body>
 		</Card>
 	)

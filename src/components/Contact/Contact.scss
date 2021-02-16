@@ -1,0 +1,36 @@
+.formContainer {
+	padding: 15px;
+	width: 100%;
+}
+
+.formGroup {
+	width: 100%;
+}
+
+.textBox {
+	color: rgb(168, 168, 168);
+	background-color: rgb(59, 59, 59);
+	width: 100%;
+	padding: 10px;
+
+	outline: none;
+	border-style: hidden hidden hidden hidden;
+	outline: 0px !important;
+	-webkit-appearance: none;
+	box-shadow: none !important;
+}
+input:focus {
+	background-color: rgb(59, 59, 59);
+}
+
+textarea {
+	min-height: 50px;
+	max-height: 500px;
+	height: 250px;
+}
+textarea:focus select:focus {
+	outline: none;
+}
+::placeholder {
+	color: rgb(168, 168, 168);
+}

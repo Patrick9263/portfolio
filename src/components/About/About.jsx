@@ -9,7 +9,7 @@ const About = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p style={{ fontSize: '40px' }}>About Me</p>
+				<p className='pageHeader'>About Me</p>
 				<br />
 
 				<MyCard title='Overview'>
