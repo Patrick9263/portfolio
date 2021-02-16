@@ -1,6 +1,7 @@
+$formColor: rgb(59, 59, 59);
+
 .formContainer {
-	padding: 15px;
-	width: 100%;
+	padding: 10px;
 }
 
 .formGroup {
@@ -8,8 +9,8 @@
 }
 
 .textBox {
-	color: rgb(168, 168, 168);
-	background-color: rgb(59, 59, 59);
+	color: white;
+	background-color: $formColor;
 	width: 100%;
 	padding: 10px;
 
@@ -19,8 +20,10 @@
 	-webkit-appearance: none;
 	box-shadow: none !important;
 }
-input:focus {
-	background-color: rgb(59, 59, 59);
+
+input[type='email'] {
+	background-color: $formColor !important;
+	padding: 10px;
 }
 
 textarea {
@@ -30,7 +33,9 @@ textarea {
 }
 textarea:focus select:focus {
 	outline: none;
+	background-color: rgb(50, 50, 50);
 }
-::placeholder {
-	color: rgb(168, 168, 168);
+
+.formButton {
+	color: rgb(126, 126, 126);
 }

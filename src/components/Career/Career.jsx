@@ -13,8 +13,8 @@ const Career = () => {
 
 				<MyCard title='Travelers Insurance'>
 					<li>Rotational Program</li>
-					<li>Ab Initio</li>
-					<li>SUI - React and JavaScript</li>
+					<li>Year 1: Ab Initio</li>
+					<li>Year 2: React/JavaScript, C#, PowerShell</li>
 				</MyCard>
 				<MyCard title='UConn Information Technology Services'>
 					<li>Support Specialist Lead</li>

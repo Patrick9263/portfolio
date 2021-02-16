@@ -1,14 +1,26 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 import Navigation from '../Navigation/Navigation'
 import './Contact.scss'
 
 const Contact = () => {
-	const handleSubmit = () => {}
 	const [name, setName] = useState('')
 	const [email, setEmail] = useState('')
 	const [subject, setSubject] = useState('')
 	const [message, setMessage] = useState('')
+
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		const data = {
+			name,
+			email,
+			subject,
+			message
+		}
+		console.log('submitted form with data: ')
+		console.log(data)
+	}
 
 	return (
 		<div className='bodyContainer font-sans antialiased'>
@@ -31,6 +43,7 @@ const Contact = () => {
 							<input
 								className='textBox'
 								placeholder='Email'
+								type='email'
 								value={email}
 								onChange={(event) => setEmail(event.target.value)}
 							/>
@@ -58,6 +71,9 @@ const Contact = () => {
 							/>
 						</Form.Group>
 					</Form.Row>
+					<Button variant='outline-dark' type='submit' onSubmit={(e) => handleSubmit(e)} className='formButton'>
+						Submit
+					</Button>
 				</Form>
 			</div>
 		</div>
