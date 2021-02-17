@@ -9,7 +9,7 @@ const About = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p className='pageHeader'>About Me</p>
+				<p className='pageHeader select-none'>About Me</p>
 				<br />
 
 				<MyCard title='Overview'>

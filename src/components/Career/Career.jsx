@@ -8,12 +8,12 @@ const Career = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p className='pageHeader'>Career</p>
+				<p className='pageHeader select-none'>Career</p>
 				<br />
 
 				<MyCard title='Travelers Insurance'>
 					<li>Rotational Program</li>
-					<li>Year 1: Ab Initio</li>
+					<li>Year 1: Ab Initio, Jenkins/UCD, PowerShell</li>
 					<li>Year 2: React/JavaScript, C#, PowerShell</li>
 				</MyCard>
 				<MyCard title='UConn Information Technology Services'>

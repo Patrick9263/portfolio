@@ -10,7 +10,7 @@ const Projects = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p className='pageHeader'>Projects</p>
+				<p className='pageHeader select-none'>Projects</p>
 				<br />
 
 				<MyCard title='Senior Design Project'>

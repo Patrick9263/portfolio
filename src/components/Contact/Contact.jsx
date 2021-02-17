@@ -27,7 +27,7 @@ const Contact = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p className='pageHeader'>Contact Me</p>
+				<p className='pageHeader select-none'>Contact Me</p>
 
 				<Form className='formContainer' onSubmit={handleSubmit}>
 					<Form.Row style={{ justifyContent: 'space-between' }}>

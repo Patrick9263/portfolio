@@ -8,7 +8,7 @@ const Education = () => {
 			<Navigation />
 
 			<div className='leftSection'>
-				<p className='pageHeader'>Education</p>
+				<p className='pageHeader select-none'>Education</p>
 				<br />
 
 				<MyCard title='University of Connecticut'>
