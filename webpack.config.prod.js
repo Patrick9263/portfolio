@@ -6,8 +6,6 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin') //
 const TerserPlugin = require('terser-webpack-plugin') // minify js
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer') // help tailwindcss to work
-const ImageminPlugin = require('imagemin-webpack-plugin').default
-const imageminMozjpeg = require('imagemin-mozjpeg')
 
 module.exports = {
 	mode: 'production',
@@ -91,11 +89,6 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: path.join(__dirname, 'index.html'),
 			favicon: './assets/favicon.ico'
-		}),
-		new ImageminPlugin({
-			// minimize images
-			pngquant: { quality: [0.5, 0.5] },
-			plugins: [imageminMozjpeg({ quality: 50 })]
 		})
 	]
 }
