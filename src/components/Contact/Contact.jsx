@@ -22,6 +22,11 @@ const Contact = () => {
 		console.log(data)
 	}
 
+	const handleDownloadPdf = (e) => {
+		e.preventDefault()
+		console.log('Downloading pdf...')
+	}
+
 	return (
 		<div className='bodyContainer font-sans antialiased'>
 			<Navigation />
@@ -75,6 +80,14 @@ const Contact = () => {
 						Submit
 					</Button>
 				</Form>
+				<Button
+					type='submit'
+					onClick={(e) => handleDownloadPdf(e)}
+					variant='secondary'
+					className='resumeButton shadow-none'
+				>
+					Download Resume (.pdf)
+				</Button>
 			</div>
 		</div>
 	)

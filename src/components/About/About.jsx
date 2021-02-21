@@ -1,6 +1,9 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
+import react from '../../../assets/rightSection/react.gif'
+import python from '../../../assets/rightSection/python.gif'
+import c from '../../../assets/rightSection/c.gif'
 
 const About = () => {
 	const im = "I'm"
@@ -27,6 +30,13 @@ const About = () => {
 					<li>Videogames</li>
 					<li>Travel</li>
 				</MyCard>
+			</div>
+			<div className='rightSection icons'>
+				<div className='icons'>
+					<img src={react} alt='react' style={{ width: '100px' }} />
+					<img src={python} alt='python' style={{ width: '100px' }} />
+					<img src={c} alt='c' style={{ width: '100px' }} />
+				</div>
 			</div>
 		</div>
 	)

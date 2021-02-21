@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
-import dna from '../../../assets/dna.gif'
+import dna from '../../../assets/rightSection/dna.gif'
 import './Projects.scss'
 
 const Projects = () => {
