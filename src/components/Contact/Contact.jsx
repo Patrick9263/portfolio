@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
-import fileDownload from 'js-file-download'
 import Button from 'react-bootstrap/Button'
 import Navigation from '../Navigation/Navigation'
 import resume from '../../../assets/Resume.pdf'
@@ -20,9 +19,7 @@ const Contact = () => {
 
 	const handleDownloadPdf = (e) => {
 		e.preventDefault()
-		console.log('Downloading pdf...')
-		const fileName = 'resume.pdf'
-		fileDownload(resume, fileName)
+		window.open(resume, '_blank', 'noreferrer')
 	}
 
 	return (
@@ -84,7 +81,7 @@ const Contact = () => {
 					variant='secondary'
 					className='resumeButton shadow-none'
 				>
-					Download Resume (.pdf)
+					View Resume as .pdf
 				</Button>
 			</div>
 		</div>

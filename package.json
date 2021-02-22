@@ -48,7 +48,6 @@
 	},
 	"dependencies": {
 		"bootstrap": "^4.6.0",
-		"js-file-download": "^0.4.12",
 		"prop-types": "^15.7.2",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.4.3",
