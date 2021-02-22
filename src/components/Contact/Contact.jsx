@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Navigation from '../Navigation/Navigation'
+import resume from '../../../assets/Resume.pdf'
 import './Contact.scss'
 
 const Contact = () => {
@@ -12,19 +13,13 @@ const Contact = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		const data = {
-			name,
-			email,
-			subject,
-			message
-		}
-		console.log('submitted form with data: ')
-		console.log(data)
+		const body = `${message}\n\n - ${name}`
+		window.open(`mailto:${email}?subject=${subject}&body=${body}`)
 	}
 
 	const handleDownloadPdf = (e) => {
 		e.preventDefault()
-		console.log('Downloading pdf...')
+		window.open(resume, '_blank', 'noreferrer')
 	}
 
 	return (
@@ -86,7 +81,7 @@ const Contact = () => {
 					variant='secondary'
 					className='resumeButton shadow-none'
 				>
-					Download Resume (.pdf)
+					View Resume as .pdf
 				</Button>
 			</div>
 		</div>
