@@ -16,7 +16,7 @@ const Home = () => {
 	return (
 		<div className='bodyContainer font-sans antialiased'>
 			<Navigation />
-			<div className='leftSection select-none'>
+			<div className='leftSection select-none mobileMarginTop'>
 				<p className='select-none' style={{ fontSize: '40px' }}>
 					Hi, I&apos;m Patrick!
 				</p>
