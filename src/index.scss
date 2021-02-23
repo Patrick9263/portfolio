@@ -19,66 +19,58 @@ body {
 	position: absolute;
 }
 
+@mixin leftSectionMixin {
+	/* border: 2px solid green; */
+	color: white;
+	grid-area: 1/2/3/2;
+	display: flex;
+	flex-flow: column nowrap;
+	overflow-y: scroll; /* Add the ability to scroll */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+@mixin pageHeaderMixin {
+	color: #682dd6;
+	font-size: 40px;
+	font-weight: bold;
+}
+@mixin bodyContainerMixin {
+	/* border: 2px solid red; */
+	display: grid;
+	height: 100vh;
+}
+
 @media (min-height: 1000px) {
 	.pageHeader {
-		color: #682dd6;
-		font-size: 40px;
-		font-weight: bold;
+		@include pageHeaderMixin();
 	}
 	.leftSection {
-		/* border: 2px solid green; */
-		color: white;
-		grid-area: 1/2/3/2;
-		display: flex;
-		flex-flow: column nowrap;
-		/* align-items: center; */
+		@include leftSectionMixin();
 		padding: 0 5% 0 5%;
 		justify-content: center;
-
-		overflow-y: scroll; /* Add the ability to scroll */
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
 	}
 }
 @media (max-height: 1000px) {
 	.pageHeader {
+		@include pageHeaderMixin();
 		margin-top: 5vh;
-		color: #682dd6;
-		font-size: 40px;
-		font-weight: bold;
 	}
 	.leftSection {
-		/* border: 2px solid green; */
-		color: white;
-		grid-area: 1/2/3/2;
-		display: flex;
-		flex-flow: column nowrap;
-		/* align-items: center; */
-		padding: 0 5% 0 5%;
-
-		overflow-y: scroll; /* Add the ability to scroll */
-		-ms-overflow-style: none; /* IE and Edge */
-		scrollbar-width: none; /* Firefox */
+		@include leftSectionMixin();
+		padding: 0 5% 100px 5%;
 	}
 }
 
 @media (min-width: 800px) {
-	/* Your new CSS changes go here */
 	.bodyContainer {
-		/* border: 2px solid red; */
-		display: grid;
+		@include bodyContainerMixin();
 		grid-template: 1fr / 50px 1fr 2fr;
-		height: 100vh;
 	}
 }
-
 @media (max-width: 800px) {
-	/* Your new CSS changes go here */
 	.bodyContainer {
-		/* border: 2px solid red; */
-		display: grid;
+		@include bodyContainerMixin();
 		grid-template: 1fr / 50px 1fr;
-		height: 100vh;
 	}
 }
 
@@ -92,6 +84,5 @@ body {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	/* align-items: center; */
 	padding: 33% 5% 33% 5%;
 }
