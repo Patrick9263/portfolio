@@ -34,8 +34,10 @@ const Projects = () => {
 			</div>
 
 			<div className='rightSection'>
-				<img src={dna} alt='dna' className='w-32' />
-				<img src={hackathon} alt='hackathon' className='rounded-full w-32' />
+				<div className='icons'>
+					<img src={dna} alt='dna' className='w-32' />
+					<img src={hackathon} alt='hackathon' className='rounded-full w-32' />
+				</div>
 			</div>
 		</div>
 	)

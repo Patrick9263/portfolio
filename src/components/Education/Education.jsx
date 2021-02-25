@@ -20,7 +20,7 @@ const Education = () => {
 					<li>Cumulative GPA of 3.45</li>
 				</MyCard>
 			</div>
-			<div className='rightSection icons'>
+			<div className='rightSection'>
 				<div className='icons'>
 					<img src={uconn} alt='uconn' className='w-32' />
 				</div>

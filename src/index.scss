@@ -88,3 +88,10 @@ body {
 	justify-content: center;
 	padding: 33% 5% 33% 5%;
 }
+
+.icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}

@@ -31,7 +31,7 @@ const About = () => {
 					<li>Travel</li>
 				</MyCard>
 			</div>
-			<div className='rightSection icons'>
+			<div className='rightSection'>
 				<div className='icons'>
 					<img src={react} alt='react' className='w-32' />
 					<img src={python} alt='python' className='w-32 rounded-full' />
