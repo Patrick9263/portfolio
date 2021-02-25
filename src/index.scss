@@ -6,6 +6,8 @@
 
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
+$accentColor: #682dd6;
+
 body {
 	background-color: #191919;
 	overflow: hidden;
@@ -30,7 +32,7 @@ body {
 	scrollbar-width: none; /* Firefox */
 }
 @mixin pageHeaderMixin {
-	color: #682dd6;
+	color: $accentColor;
 	font-size: 40px;
 	font-weight: bold;
 }

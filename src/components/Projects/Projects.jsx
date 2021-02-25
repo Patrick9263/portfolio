@@ -2,6 +2,7 @@ import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
 import dna from '../../../assets/rightSection/dna.gif'
+import hackathon from '../../../assets/rightSection/hackathon.jpg'
 import './Projects.scss'
 
 const Projects = () => {
@@ -33,7 +34,8 @@ const Projects = () => {
 			</div>
 
 			<div className='rightSection'>
-				<img src={dna} alt='dna' style={{ width: '100px' }} />
+				<img src={dna} alt='dna' className='w-32' />
+				<img src={hackathon} alt='hackathon' className='rounded-full w-32' />
 			</div>
 		</div>
 	)

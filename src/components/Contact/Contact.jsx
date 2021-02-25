@@ -35,6 +35,7 @@ const Contact = () => {
 							<input
 								className='textBox'
 								placeholder='Name'
+								type='text'
 								value={name}
 								onChange={(event) => setName(event.target.value)}
 							/>
@@ -42,7 +43,7 @@ const Contact = () => {
 						<Form.Group as={Form.Col} controlId='formGridEmail' style={{ width: '48%' }}>
 							<input
 								className='textBox'
-								placeholder='Email'
+								placeholder='Your Email (optional)'
 								type='email'
 								value={email}
 								onChange={(event) => setEmail(event.target.value)}
@@ -55,6 +56,7 @@ const Contact = () => {
 							<input
 								className='textBox'
 								placeholder='Subject'
+								type='text'
 								value={subject}
 								onChange={(event) => setSubject(event.target.value)}
 							/>
@@ -67,6 +69,7 @@ const Contact = () => {
 								value={message}
 								onChange={(event) => setMessage(event.target.value)}
 								placeholder='Message'
+								type='text'
 								className='textBox'
 							/>
 						</Form.Group>

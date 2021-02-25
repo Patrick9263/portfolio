@@ -33,9 +33,9 @@ const About = () => {
 			</div>
 			<div className='rightSection icons'>
 				<div className='icons'>
-					<img src={react} alt='react' style={{ width: '100px' }} />
-					<img src={python} alt='python' style={{ width: '100px' }} />
-					<img src={c} alt='c' style={{ width: '100px' }} />
+					<img src={react} alt='react' className='w-32' />
+					<img src={python} alt='python' className='w-32 rounded-full' />
+					<img src={c} alt='c' className='w-32' />
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
+import travelers from '../../../assets/rightSection/travelers.png'
+import uconn from '../../../assets/rightSection/uconn.png'
 
 const Career = () => {
 	return (
@@ -23,6 +25,12 @@ const Career = () => {
 					<li>Hard drives were encrypted on these machines to protect important data.</li>
 				</MyCard>
 				<br />
+			</div>
+			<div className='rightSection icons'>
+				<div className='icons'>
+					<img src={travelers} alt='travelers' className='w-32' />
+					<img src={uconn} alt='uconn' className='w-32' />
+				</div>
 			</div>
 		</div>
 	)

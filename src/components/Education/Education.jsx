@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
+import uconn from '../../../assets/rightSection/uconn.png'
 
 const Education = () => {
 	return (
@@ -18,6 +19,11 @@ const Education = () => {
 					<li>Minor in Mathematics</li>
 					<li>Cumulative GPA of 3.45</li>
 				</MyCard>
+			</div>
+			<div className='rightSection icons'>
+				<div className='icons'>
+					<img src={uconn} alt='uconn' className='w-32' />
+				</div>
 			</div>
 		</div>
 	)
