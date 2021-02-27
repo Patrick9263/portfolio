@@ -43,7 +43,7 @@ const Contact = () => {
 						<Form.Group as={Form.Col} controlId='formGridEmail' style={{ width: '48%' }}>
 							<input
 								className='textBox'
-								placeholder='Your Email (optional)'
+								placeholder='Your Email'
 								type='email'
 								value={email}
 								onChange={(event) => setEmail(event.target.value)}

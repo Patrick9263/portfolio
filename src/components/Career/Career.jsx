@@ -28,7 +28,7 @@ const Career = () => {
 			</div>
 			<div className='rightSection'>
 				<div className='icons'>
-					<img src={travelers} alt='travelers' className='w-32' />
+					<img src={travelers} alt='travelers' className='w-32 rounded-full' />
 					<img src={uconn} alt='uconn' className='w-32' />
 				</div>
 			</div>
