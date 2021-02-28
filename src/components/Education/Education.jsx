@@ -1,13 +1,10 @@
 import React from 'react'
-import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
 import uconn from '../../../assets/rightSection/uconn.png'
 
 const Education = () => {
 	return (
-		<div className='bodyContainer font-sans antialiased'>
-			<Navigation />
-
+		<>
 			<div className='leftSection'>
 				<p className='pageHeader select-none'>Education</p>
 				<br />
@@ -25,7 +22,7 @@ const Education = () => {
 					<img src={uconn} alt='uconn' className='w-32' />
 				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 

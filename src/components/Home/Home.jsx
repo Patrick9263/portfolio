@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../Navigation/Navigation'
 import './Home.scss'
 
 // https://github.com/jscottsmith/react-scroll-parallax#banner-layers-prop
@@ -9,14 +8,16 @@ import './Home.scss'
 
 // filter generator:
 // https://codepen.io/sosuke/pen/Pjoqqp
+// https://tests.christianoliff.com/hex-to-css-filter-generator/
 
 // https://fontisto.com/icons
 
+// https://github.com/ReactTraining/react-router/blob/v3/docs/API.md#named-components
+
 const Home = () => {
 	return (
-		<div className='bodyContainer font-sans antialiased'>
-			<Navigation />
-			<div className='leftSection select-none mobileMarginTop'>
+		<>
+			<div className='home select-none'>
 				<p className='select-none' style={{ fontSize: '40px' }}>
 					Hi, I&apos;m Patrick!
 				</p>
@@ -27,7 +28,7 @@ const Home = () => {
 					React and JavaScript Developer
 				</p>
 			</div>
-		</div>
+		</>
 	)
 }
 

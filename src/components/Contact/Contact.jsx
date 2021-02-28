@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
-import Navigation from '../Navigation/Navigation'
 import resume from '../../../assets/Resume.pdf'
 import './Contact.scss'
 
@@ -23,10 +22,8 @@ const Contact = () => {
 	}
 
 	return (
-		<div className='bodyContainer font-sans antialiased'>
-			<Navigation />
-
-			<div className='leftSection'>
+		<>
+			<div className='contact'>
 				<p className='pageHeader select-none'>Contact Me</p>
 
 				<Form className='formContainer' onSubmit={handleSubmit}>
@@ -43,7 +40,7 @@ const Contact = () => {
 						<Form.Group as={Form.Col} controlId='formGridEmail' style={{ width: '48%' }}>
 							<input
 								className='textBox'
-								placeholder='Your Email'
+								placeholder='Email'
 								type='email'
 								value={email}
 								onChange={(event) => setEmail(event.target.value)}
@@ -87,7 +84,7 @@ const Contact = () => {
 					View Resume as .pdf
 				</Button>
 			</div>
-		</div>
+		</>
 	)
 }
 

@@ -1,0 +1,79 @@
+$accentColor: #682dd6;
+
+#app {
+	/* border: 2px solid red; */
+	display: grid;
+	height: 100vh;
+	background-color: #191919;
+	overflow: hidden;
+	grid-template: 1fr / 50px 1fr;
+}
+
+@mixin leftSectionMixin {
+	/* border: 2px solid green; */
+	color: white;
+	grid-area: 1/1/1/1;
+	display: flex;
+	flex-flow: column nowrap;
+	overflow-y: scroll; /* Add the ability to scroll */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+@mixin pageHeaderMixin {
+	color: $accentColor;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+@media (min-height: 1000px) {
+	.pageHeader {
+		@include pageHeaderMixin();
+	}
+	.leftSection {
+		@include leftSectionMixin();
+		padding: 0 0 0 20px;
+		justify-content: center;
+	}
+}
+@media (max-height: 1000px) {
+	.pageHeader {
+		@include pageHeaderMixin();
+		margin-top: 5vh;
+	}
+	.leftSection {
+		@include leftSectionMixin();
+		padding: 0 5% 100px 5%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.leftSection {
+		@include leftSectionMixin();
+		min-width: 250px;
+	}
+}
+.leftSection::-webkit-scrollbar {
+	display: none;
+}
+.rightSection {
+	color: white;
+	grid-area: 1/2/1/2;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	padding: 33% 5% 33% 5%;
+}
+
+.icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.route-wrapper {
+	position: relative;
+}
+.route-wrapper > div {
+	position: absolute;
+}

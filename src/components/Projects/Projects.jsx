@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from '../Navigation/Navigation'
 import MyCard from '../Reusable/MyCard'
 import dna from '../../../assets/rightSection/dna.gif'
 import hackathon from '../../../assets/rightSection/hackathon.jpg'
@@ -7,17 +6,15 @@ import './Projects.scss'
 
 const Projects = () => {
 	return (
-		<div className='bodyContainer font-sans antialiased'>
-			<Navigation />
-
+		<>
 			<div className='leftSection'>
 				<p className='pageHeader select-none'>Projects</p>
 				<br />
 
 				<MyCard title='Senior Design Project'>
 					<li>
-						Developed a web-based application which allows pathologists easy access to CNV (Copy Number Variations)
-						calling using WGS (Whole Genome Sequencing) data to improve research.
+						Developed a web-based application which allows pathologists easy access to Copy Number Variation (CNV)
+						calling using Whole Genome Sequencing (WGS) data to improve research.
 					</li>
 					<li>
 						Application cross referenced any CNVs found with reputable clinical databases to identify CNVs widely known
@@ -39,7 +36,7 @@ const Projects = () => {
 					<img src={hackathon} alt='hackathon' className='rounded-full w-32' />
 				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 
