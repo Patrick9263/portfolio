@@ -11,15 +11,26 @@ const Career = () => {
 				<br />
 
 				<MyCard title='Travelers Insurance'>
-					<li>Rotational Program</li>
-					<li>Year 1: Ab Initio, Jenkins/UCD, PowerShell</li>
-					<li>Year 2: React/JavaScript, C#, PowerShell</li>
+					<li>Currently I&apos;m in a rotational program within personal insurance:</li>
+					<li>
+						<b>Year 1</b> - Ab Initio, Teradata/SQL, Jenkins/UCD, PowerShell. Used Ab Initio and Teradata as an ETL tool
+						to consume and manipulate data used for analytics further down the data stream in order to make business
+						decisions.
+					</li>
+					<li>
+						<b>Year 2</b> - React/JavaScript, C#, PowerShell. Worked on an application used by agents to quote and issue
+						insurance policies. Helped with conversion from custom-made framework to React.
+					</li>
 				</MyCard>
 				<MyCard title='UConn Information Technology Services'>
 					<li>Support Specialist Lead</li>
 					<li>Re-imaged and set up computers for faculty/staff.</li>
 					<li>Troubleshooted software/hardware issues quickly and efficiently.</li>
 					<li>Hard drives were encrypted on these machines to protect important data.</li>
+					<li>
+						Created an electron app to graphically run a PowerShell script. The script was used for automatically
+						performing setup tasks for PCs with a fresh install of Windows.
+					</li>
 				</MyCard>
 				<br />
 			</div>

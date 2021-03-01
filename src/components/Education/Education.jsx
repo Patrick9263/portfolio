@@ -12,7 +12,7 @@ const Education = () => {
 				<MyCard title='University of Connecticut'>
 					<li>Bachelor of Science in Engineering</li>
 					<li>Major in Computer Science and Engineering</li>
-					<li>Concentration in Software Design</li>
+					<li>Concentration in Software Design and Development</li>
 					<li>Minor in Mathematics</li>
 					<li>Cumulative GPA of 3.45</li>
 				</MyCard>

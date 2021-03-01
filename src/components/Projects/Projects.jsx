@@ -24,8 +24,15 @@ const Projects = () => {
 					<li>Displayed copy number variations and clinical annotations to pathologists with a user-friendly GUI.</li>
 				</MyCard>
 				<MyCard title='UConn Hackathon'>
-					<li>Find and solve present-day problems involving sports and games within 24 hours</li>
-					<li>Developed an Android application in a group of three to promote recycling at sports venues</li>
+					<li>
+						The Hackathon theme was to find and solve present-day problems involving sports and games within 24 hours
+					</li>
+					<li>
+						My team&apos;s solution to littering at sports venues was to develop a mobile application (Android) to
+						promote recycling at sports venues. Users would place recyclables in a machine at the venue which would scan
+						their QR code in the app. This would update their rewards in the app (e.g. points toward discounts on future
+						game tickets, free t-shirts, etc.)
+					</li>
 				</MyCard>
 				<br />
 			</div>
