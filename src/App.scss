@@ -49,7 +49,8 @@ $accentColor: #682dd6;
 @media (max-width: 1000px) {
 	.leftSection {
 		@include leftSectionMixin();
-		min-width: 250px;
+		grid-area: 1/1/1/3;
+		padding: 0 5% 100px 5%;
 	}
 }
 .leftSection::-webkit-scrollbar {
@@ -64,11 +65,18 @@ $accentColor: #682dd6;
 	padding: 33% 5% 33% 5%;
 }
 
-.icons {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100%;
+@media (max-width: 1000px) {
+	.icons {
+		display: none;
+	}
+}
+@media (min-width: 1000px) {
+	.icons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 100%;
+	}
 }
 
 .route-wrapper {
