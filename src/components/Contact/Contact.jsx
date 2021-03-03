@@ -81,7 +81,7 @@ const Contact = () => {
 					variant='secondary'
 					className='resumeButton shadow-none'
 				>
-					View Resume as .pdf
+					View Resume
 				</Button>
 			</div>
 		</>

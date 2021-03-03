@@ -25,12 +25,12 @@ const Career = () => {
 				<MyCard title='UConn Information Technology Services'>
 					<li>Support Specialist Lead</li>
 					<li>Re-imaged and set up computers for faculty/staff.</li>
-					<li>Troubleshooted software/hardware issues quickly and efficiently.</li>
-					<li>Hard drives were encrypted on these machines to protect important data.</li>
 					<li>
 						Created an electron app to graphically run a PowerShell script. The script was used for automatically
 						performing setup tasks for PCs with a fresh install of Windows.
 					</li>
+					<li>Troubleshooted software/hardware issues quickly and efficiently.</li>
+					<li>Hard drives were encrypted on these machines to protect important data.</li>
 				</MyCard>
 				<br />
 			</div>
