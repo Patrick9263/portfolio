@@ -16,13 +16,6 @@ const App = () => {
 	// we need to map the `scale` prop we define below
 	// to the transform style property
 	function mapStyles(styles) {
-		// let homeStyle = {}
-
-		// if (location.pathname === '/') {
-		// 	homeStyle = { gridTemplate: '1fr / 2fr 1fr' }
-		// } else {
-		// 	homeStyle = { gridTemplate: '1fr / 1fr' }
-		// }
 		return {
 			opacity: styles.opacity,
 			transform: `scale(${styles.scale})`,

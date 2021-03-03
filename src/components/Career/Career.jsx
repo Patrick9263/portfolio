@@ -10,7 +10,7 @@ const Career = () => {
 				<p className='pageHeader select-none'>Career</p>
 				<br />
 
-				<MyCard title='Travelers Insurance'>
+				<MyCard title='Travelers Insurance' subTitle='Associate Software Engineer'>
 					<li>Currently I&apos;m in a rotational program within personal insurance:</li>
 					<li>
 						<b>Year 1</b> - Ab Initio, Teradata/SQL, Jenkins/UCD, PowerShell. Used Ab Initio and Teradata as an ETL tool
