@@ -5,7 +5,6 @@ import python from '../../../assets/rightSection/python.gif'
 import c from '../../../assets/rightSection/c.gif'
 
 const About = () => {
-	const im = "I'm"
 	return (
 		<>
 			<div className='leftSection'>
@@ -13,11 +12,11 @@ const About = () => {
 				<br />
 
 				<MyCard title='Overview'>
-					{im} a software engineer at Travelers, where {im} currently in a rotational program. {im} in my second year
-					where I mainly work with React/JavaScript, as well as occasional C# and PowerShell.
+					Software engineer at Travelers in a rotational program. Currently in the second year of the program, working
+					with React/JavaScript, C# and PowerShell.
 				</MyCard>
 				<MyCard title='Skills'>
-					<li>React, JavaScript, HTML5, CSS, REST APIs, Markdown, AsciiDocs</li>
+					<li>React, JavaScript, HTML5, (S)CSS, REST APIs, Markdown, AsciiDocs</li>
 					<li>Python, C/C++, C#, Java, MatLab</li>
 					<li>PowerShell, Bash, MySQL, Git</li>
 					<li>PC hardware</li>

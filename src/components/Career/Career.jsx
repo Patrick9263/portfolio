@@ -11,7 +11,7 @@ const Career = () => {
 				<br />
 
 				<MyCard title='Travelers Insurance' subTitle='Associate Software Engineer'>
-					<li>Currently I&apos;m in a rotational program within personal insurance:</li>
+					<li>Currently in a rotational program within personal insurance:</li>
 					<li>
 						<b>Year 1</b> - Ab Initio, Teradata/SQL, Jenkins/UCD, PowerShell. Used Ab Initio and Teradata as an ETL tool
 						to consume and manipulate data used for analytics further down the data stream in order to make business
@@ -22,8 +22,7 @@ const Career = () => {
 						insurance policies. Helped with conversion from custom-made framework to React.
 					</li>
 				</MyCard>
-				<MyCard title='UConn Information Technology Services'>
-					<li>Support Specialist Lead</li>
+				<MyCard title='UConn Information Technology Services' subTitle='Support Specialist Lead'>
 					<li>Re-imaged and set up computers for faculty/staff.</li>
 					<li>
 						Created an electron app to graphically run a PowerShell script. The script was used for automatically
