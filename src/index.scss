@@ -1,12 +1,10 @@
-@import 'tailwindcss/base';
-
-@import 'tailwindcss/components';
-
-@import 'tailwindcss/utilities';
-
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
 body {
-	background-color: #191919;
-	overflow: hidden;
+  background-color: #191919;
+  overflow: hidden;
+  margin: 0;
+  font-family: "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
