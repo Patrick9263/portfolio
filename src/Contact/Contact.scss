@@ -73,6 +73,7 @@ textarea {
 @media (min-width: 600px) {
   .contact {
     @include contactMixin();
+    align-self: center;
     width: 500px;
   }
 }
