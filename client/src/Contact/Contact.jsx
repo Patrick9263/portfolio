@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import resume from "./Resume.pdf";
 import "./Contact.scss";
+import axios from "axios";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -12,8 +13,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const body = `${message}\n\n - ${name}`;
-    window.open(`mailto:${email}?subject=${subject}&body=${body}`);
+    // window.open(`mailto:${email}?subject=${subject}&body=${message}`);
+    // https://morioh.com/p/ca75996654d1
+    // https://www.youtube.com/watch?v=0B2raYYH2fE
+
+    axios.post("http://localhost:5000/sendEmail", {
+      data: {
+        name,
+        email,
+        subject,
+        message,
+      },
+    });
   };
 
   const handleDownloadPdf = (e) => {
