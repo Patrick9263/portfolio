@@ -6,9 +6,6 @@ var nodemailer = require("nodemailer");
 
 const app = express();
 const apiPort = 5000;
-const runningInDEV =
-  JSON.stringify(process.env.ENVIRONMENT) !== JSON.stringify("prod");
-runningInDEV && console.log("Running in development mode...");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
@@ -39,16 +36,12 @@ function sendEmail(user, pass, to, data) {
 
 app.post("/sendEmail", (req, res) => {
   res.send("POST request received.");
-  if (runningInDEV) {
-    sendEmail(
-      process.env.EMAIL_API,
-      process.env.EMAIL_API_PASS,
-      process.env.EMAIL_API_DESTINATION,
-      req.body.data
-    );
-  } else {
-    sendEmail(EMAIL_API, EMAIL_API_PASS, EMAIL_API_DESTINATION, req.body.data);
-  }
+  sendEmail(
+    process.env.EMAIL_API,
+    process.env.EMAIL_API_PASS,
+    process.env.EMAIL_API_DESTINATION,
+    req.body.data
+  );
 });
 
 app.use((_req, res, _next) => {
