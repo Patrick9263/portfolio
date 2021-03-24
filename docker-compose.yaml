@@ -13,7 +13,7 @@ services:
     image: react-app-nginx
     stdin_open: true
     ports:
-      - "8000:80"
+      - "80:80"
     networks:
       - mern-app
 
